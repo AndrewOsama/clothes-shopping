@@ -70,7 +70,26 @@ export default function App() {
 
   const [products, setProducts] = useState<Product[]>(() => {
     const saved = localStorage.getItem("vogue_products");
-    return saved ? JSON.parse(saved) : initialProducts;
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved) as Product[];
+        return parsed.map((p) => {
+          if (p.id === "p2" && (!p.images || p.images[0].includes("photo-1548624149-f9b1859aa7d0"))) {
+            return {
+              ...p,
+              images: [
+                "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=800",
+                "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&q=80&w=800"
+              ]
+            };
+          }
+          return p;
+        });
+      } catch (e) {
+        return initialProducts;
+      }
+    }
+    return initialProducts;
   });
 
   const [coupons, setCoupons] = useState<Coupon[]>(() => {

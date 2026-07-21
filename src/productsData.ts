@@ -91,8 +91,8 @@ export const initialProducts: Product[] = [
     weight_kg: 0.9,
     stock: 22,
     images: [
-      "https://images.unsplash.com/photo-1548624149-f9b1859aa7d0?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=800"
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&q=80&w=800"
     ],
     shipping_en: "Complimentary Express Delivery within 2-4 business days.",
     shipping_ar: "توصيل سريع مجاني خلال ٢-٤ أيام عمل لجميع المناطق.",
