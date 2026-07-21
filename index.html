@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Vogue Haute Couture | Premium Luxury Fashion & AI Personal Styling</title>
+    <meta name="title" content="Vogue Haute Couture | Premium Luxury Fashion & AI Personal Styling" />
+    <meta name="description" content="Discover the ultimate premium luxury fashion experience. Vogue Haute Couture features curated ready-to-wear clothing, activewear, and custom accessories powered by real-time AI styling recommendations." />
+    <meta name="keywords" content="luxury fashion, haute couture, custom clothing, AI stylist, designer bags, designer shoes, premium brand Saudi Arabia, Riyadh fashion, Paris couture" />
+    <meta name="author" content="Vogue Haute Couture" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ai.studio/build" />
+    <meta property="og:title" content="Vogue Haute Couture | Premium Luxury Fashion & AI Personal Styling" />
+    <meta property="og:description" content="Discover curated luxury collections with an interactive personal AI stylist. Explore rich materials, custom sizes, and secure checkout." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Vogue Haute Couture | Premium Luxury Fashion & AI Personal Styling" />
+    <meta property="twitter:description" content="Discover curated luxury collections with an interactive personal AI stylist. Explore rich materials, custom sizes, and secure checkout." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- PWA Meta Tags & Icons -->
+    <meta name="theme-color" content="#12100e" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=180&auto=format&fit=crop" />
+    <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=32&auto=format&fit=crop" />
+  </head>
+  <body class="bg-stone-950 text-stone-100 selection:bg-stone-100 selection:text-stone-950 antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Register PWA Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('ServiceWorker registered with scope: ', reg.scope))
+            .catch(err => console.log('ServiceWorker registration failed: ', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+

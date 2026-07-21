@@ -1,0 +1,6 @@
+{
+  "name": "Vogue Haute Couture",
+  "description": "An ultra-premium, production-ready clothing e-commerce store with English/Arabic localization, advanced product filters, live order tracking, a full admin suite, and a smart Gemini-powered AI Stylist.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
